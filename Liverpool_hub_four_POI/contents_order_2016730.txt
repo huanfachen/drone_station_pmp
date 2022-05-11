@@ -1,0 +1,47 @@
+********************************************************************
+
+EDINA DIGIMAP:
+
+DIGITAL DATA SUPPLY
+
+********************************************************************
+
+
+This data is distributed under licence by:
+
+    EDINA
+    University of Edinburgh
+    https://edina.ac.uk
+
+    Tel:    0131 650 3302
+    Fax:    0131 650 3308
+    Email:  digimap@ed.ac.uk
+		
+
+
+---------------------------------------------------------
+
+CONTENTS
+
+You will have received the data files listed below, each product and area has
+its own folder. Note that each data folder contains a conditions.txt file
+which states the conditions for use of the data within. These conditions can
+vary between different data products.
+
+
+
+-------------------------------------------------------------------------------
+Folder:           poi_4565130
+Extent:           333022.7126673089, 384129.14479948045 - 340449.5232626189, 391249.1131641702
+Date Ordered:     10 May 2022 at 13:22:45
+Product:          Points of Interest
+Version:          March 2022
+Format:           CSV
+Theme:            N/A
+Area:             29.755776636184834 square kilometres
+Chunks:
+ 
+Filename:         poi_4565130/poi_4565130.csv
+Extent:           333022.7126673089, 384129.14479948045 - 340449.5232626189, 391249.1131641702
+Last Amended:     1 March 2022
+     
