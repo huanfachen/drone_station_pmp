@@ -93,4 +93,16 @@ The code for the p-median problem of the stations of drone patrols. Drone patrol
     1. Attributes: 'site_id', 'site_long', 'site_lat', 'site_easting', 'site_northing', 'demand_id', 'demand_long', 'demand_lat', 'demand_easting',
               'demand_northing', 'Euclidean', 'network', 'constrained'.
 
+13. The DTM data in England: `SURVEY_LIDAR_Composite_1m_DTM_2020_Elevation.tiff`
+
+       1. [source](https://environment.data.gov.uk/image/rest/services/SURVEY/LIDAR_Composite_1m_DTM_2020_Elevation/ImageServer)
+       2. Note that this data is not used. It is very coarse with width of 400 and height of 400 in England.
+
+14. LIDAR Composite DTM data (2m resolution)
+
+       1. [link](https://environment.data.gov.uk/DefraDataDownload/?Mode=survey)
+       2. Steps: upload the zip file containing the bounding box of Liverpool hub four (the file called bbox_Liverpool_hub_four.zip); select **LIDAR Composite DTM** in product, select **2020** in Year, and **DTM 2M** in Resolution.
+       3. Will get multiple tiff. Using the gdalwarp function to concatenate all tiff files.
+
+15. 
 
