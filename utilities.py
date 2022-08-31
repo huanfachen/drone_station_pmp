@@ -51,11 +51,28 @@ def read_distance_matrix_as_np_array(path_csv_distance):
     distance_matrix = pd.read_csv(path_csv_distance, index_col=0)
     return distance_matrix.to_numpy()
 
+def read_distance_matrix_as_dataframe(path_csv_distance):
+    import pandas as pd
+    return pd.read_csv(path_csv_distance, index_col=0)
+
+def get_selected_facility_sites(model, facility_points):
+    """Get selected facility sites
+
+    Args:
+        model (_type_): p-median model (solved)
+        facility_points (GeoDataFrame): the facility site point dataset
+    """
+    fac_sites = []
+    for i in range(facility_points.shape[0]):
+        if model.fac2cli[i]:
+            fac_sites.append(i)
+    return facility_points.iloc[fac_sites,]
+
 def plot_pmp_results(model, facility_points, demand_points, boundary, plot_title = 'P-median problem'):
     """Plot the results of p-median model
 
     Args:
-        model (_type_): _description_
+        model (_type_): p-median model (solved)
         facility_points (GeoDataFrame): the facility site point dataset
         demand_points (GeoDataFrame): the demand site dataset
         boundary (GeoDataFrame): the boundary polygon dataset
