@@ -18,7 +18,7 @@ The code for the p-median problem of the stations of drone patrols. Drone patrol
    1. Input: POI data, demand geojson data, site geojson data
    2. Output: distance matrix files
 
-4. `p-median-drone.ipynb`: the notebook for the pmp.
+4. `p-median-drone_v2.ipynb`: the notebook for the pmp.
 
 ## Key data files
 
@@ -77,8 +77,6 @@ The code for the p-median problem of the stations of drone patrols. Drone patrol
    2. The csv file containing the POI data is `Liverpool_hub_four_POI/poi_4565130/poi-extract-2022_03.csv`.
    2. The classification table of the POI data is `Liverpool_hub_four_POI/poi_4565130/docs/POI_CLASSIFICATIONS.txt`.
 
-8. 
-
 9. Euclidean distance matrix (csv): `distance_matrix_demand_site_Euclidean.csv`
 
    1. This files contains M rows and N columns, with rows and columns representing demands and facilities, respectively.
@@ -88,10 +86,11 @@ The code for the p-median problem of the stations of drone patrols. Drone patrol
 
 11. No-fly-zone-constrained distance matrix (csv): `distance_matrix_demand_site_constrained.csv`
 
-12. The distance csv file containing all distance values and the locations of all demands and sites: `distance_dataframe.csv`
+12. The distance csv file containing all distance values and the locations of all demands and sites: `distance_df.csv`
 
     1. Attributes: 'site_id', 'site_long', 'site_lat', 'site_easting', 'site_northing', 'demand_id', 'demand_long', 'demand_lat', 'demand_easting',
-              'demand_northing', 'Euclidean', 'network', 'constrained'.
+              'demand_northing', 'Euclidean', 'network'.
+    2. Note that 3D distance is not included in this document.
 
 13. The DTM data in England: `SURVEY_LIDAR_Composite_1m_DTM_2020_Elevation.tiff`
 
