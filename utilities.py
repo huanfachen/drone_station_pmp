@@ -56,7 +56,7 @@ def read_distance_matrix_as_dataframe(path_csv_distance):
     return pd.read_csv(path_csv_distance, index_col=0)
 
 def get_selected_facility_sites(model, facility_points):
-    """Get selected facility sites
+    """Get selected facility sites. Return a geodataframe of the selected sites
 
     Args:
         model (_type_): p-median model (solved)
